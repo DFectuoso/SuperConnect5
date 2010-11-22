@@ -7,10 +7,21 @@
 //
 
 #import "Player.h"
+#import "GlobalDefines.h"
+#import "Move.h"
+#import "Game.h"
 
 @implementation Player
 
-@synthesize local, name, image;
+@synthesize local, name, image, computer;
+
+-(CGPoint)moveWithState:(NSArray*)moves andGame:(Game*)game{
+	CGPoint point = CGPointMake(floor(BOARD_SIZE/2), floor(BOARD_SIZE/2));
+	while ([game getMoveFromArrayWithCell:point] != nil) {
+		point = CGPointMake(arc4random() % BOARD_SIZE,arc4random() %  BOARD_SIZE);
+	}
+	return point;
+}
 
 +(NSString*)getHardCodedImageForIndex:(int)i{
 	if (i == 0) return @"red_circle.png";

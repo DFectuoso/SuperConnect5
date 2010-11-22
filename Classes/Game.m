@@ -20,7 +20,7 @@
 	NSLog(@"Players:%i", [[self players] count] );
 	int random = arc4random() % [players count];
 	turn = [players objectAtIndex:random];
-	[delegate game:self newStateActive:[turn local]];
+	[self getNextActivePlayer];
 }
 
 -(void)tryToAddMoveInCell:(CGPoint)cell{
@@ -33,6 +33,10 @@
 	if ([self getMoveFromArrayWithCell:cell] != nil) return;
 	NSLog(@"G: try to add move after checks");
 
+	[self addMove:cell];
+}
+
+-(void)addMove:(CGPoint)cell{
 	// Create and add object
 	Move* move = [[Move alloc] init];
 	[move setCell:cell];
@@ -40,18 +44,17 @@
 	[moves addObject:move];
 	
 	// *** TODO: Should I broadcast this? ****
-
+	
 	// Did we win with that?
 	[self checkForWin];
-
+	
 	// Lets get the next active player
 	[self getNextActivePlayer];
-
+	
 	// Lets alert the new state to the VC
-	[delegate game:self newStateActive:[turn local]];
 	// Lets alert the new move to the VC
 	[delegate game:self newMove:move];
-
+	
 	// Clean up
 	[move release];
 }
@@ -62,6 +65,12 @@
 		position = 0;
 	}
 	turn = [players objectAtIndex:position];
+	if([turn computer]){
+		[self performSelector:@selector(computerMove) withObject:nil afterDelay:(arc4random() % 5000)/1000];
+	}
+
+	[delegate game:self newStateActive:[turn local]];
+
 }
 
 - (Move*)getMoveFromArrayWithCell:(CGPoint)cell{
@@ -72,6 +81,12 @@
 	}
 	return nil;
 }
+
+- (void)  computerMove{
+	NSLog(@"sup");
+	[self addMove:[turn moveWithState:moves andGame:self]];
+}
+
 
 -(void)checkForWin{
 	BOOL win = NO;

@@ -27,7 +27,6 @@
 		B6813F441299C37300861A45 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F421299C37300861A45 /* GameViewController.m */; };
 		B6813F451299C37300861A45 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6813F431299C37300861A45 /* GameViewController.xib */; };
 		B6813F5E1299C6DB00861A45 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F5D1299C6DB00861A45 /* Player.m */; };
-		B6813F611299C6E300861A45 /* ComputerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F601299C6E300861A45 /* ComputerPlayer.m */; };
 		B6813F641299C6EA00861A45 /* Move.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F631299C6EA00861A45 /* Move.m */; };
 		B6813F671299C6F000861A45 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F661299C6F000861A45 /* Game.m */; };
 		B6813F6B1299C70000861A45 /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F6A1299C70000861A45 /* GameBoard.m */; };
@@ -79,8 +78,6 @@
 		B6813F431299C37300861A45 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
 		B6813F5C1299C6DB00861A45 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		B6813F5D1299C6DB00861A45 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		B6813F5F1299C6E300861A45 /* ComputerPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerPlayer.h; sourceTree = "<group>"; };
-		B6813F601299C6E300861A45 /* ComputerPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerPlayer.m; sourceTree = "<group>"; };
 		B6813F621299C6EA00861A45 /* Move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Move.h; sourceTree = "<group>"; };
 		B6813F631299C6EA00861A45 /* Move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Move.m; sourceTree = "<group>"; };
 		B6813F651299C6F000861A45 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -250,8 +247,6 @@
 			children = (
 				B6813F5C1299C6DB00861A45 /* Player.h */,
 				B6813F5D1299C6DB00861A45 /* Player.m */,
-				B6813F5F1299C6E300861A45 /* ComputerPlayer.h */,
-				B6813F601299C6E300861A45 /* ComputerPlayer.m */,
 				B6813F621299C6EA00861A45 /* Move.h */,
 				B6813F631299C6EA00861A45 /* Move.m */,
 				B6813F651299C6F000861A45 /* Game.h */,
@@ -415,7 +410,6 @@
 				B6813EFE1299BC9500861A45 /* StatsViewController.m in Sources */,
 				B6813F441299C37300861A45 /* GameViewController.m in Sources */,
 				B6813F5E1299C6DB00861A45 /* Player.m in Sources */,
-				B6813F611299C6E300861A45 /* ComputerPlayer.m in Sources */,
 				B6813F641299C6EA00861A45 /* Move.m in Sources */,
 				B6813F671299C6F000861A45 /* Game.m in Sources */,
 				B6813F6B1299C70000861A45 /* GameBoard.m in Sources */,

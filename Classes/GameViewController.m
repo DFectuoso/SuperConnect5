@@ -33,7 +33,6 @@
 	if (networkPlayers == 0) {
 		// Create local players
 		for (int i = 0; i < localPlayers; i++) {
-
 			Player* p = [[Player alloc] init];
 			[p setLocal:YES];
 			[p setName:[NSString stringWithFormat:@"Player %i", i + 1]];
@@ -43,7 +42,15 @@
 		}
 		
 		// ********TODO TODO Create computers for each computer
-
+		for (int i = 0; i < localPlayers; i++) {
+			Player* p = [[Player alloc] init];
+			[p setComputer:YES];
+			[p setName:[NSString stringWithFormat:@"Computer %i", i + 1]];
+			[p setImage:[UIImage imageNamed:[Player getHardCodedImageForIndex:i + localPlayers]]];
+			[[game players] addObject:p];
+			[p release];
+		}
+		
 		[game startLocally];
 	} else {
 		// ********TODO TODO HERE YOU HAVE TO see if you are the lowest, if so, activate database(errr, master server script)

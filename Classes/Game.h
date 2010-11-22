@@ -33,8 +33,10 @@
 - (void)  startLocally;
 
 - (void)  checkForWin;
+- (void)  computerMove;
 - (void)  getNextActivePlayer;
 - (void)  tryToAddMoveInCell:(CGPoint)cell;
+- (void)  addMove:(CGPoint)cell;
 - (Move*) getMoveFromArrayWithCell:(CGPoint)cell;
 
 @end
