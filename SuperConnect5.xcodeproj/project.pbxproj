@@ -43,6 +43,8 @@
 		B68141151299FC5800861A45 /* green_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = B681410B1299FC5800861A45 /* green_cross.png */; };
 		B68141161299FC5800861A45 /* purple_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = B681410C1299FC5800861A45 /* purple_cross.png */; };
 		B68141431299FE4900861A45 /* blue_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = B68141421299FE4900861A45 /* blue_cross.png */; };
+		B68141631299FF8700861A45 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68141611299FF8700861A45 /* ResultViewController.m */; };
+		B68141641299FF8700861A45 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68141621299FF8700861A45 /* ResultViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,9 @@
 		B681410B1299FC5800861A45 /* green_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_cross.png; sourceTree = "<group>"; };
 		B681410C1299FC5800861A45 /* purple_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple_cross.png; sourceTree = "<group>"; };
 		B68141421299FE4900861A45 /* blue_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_cross.png; sourceTree = "<group>"; };
+		B68141601299FF8700861A45 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		B68141611299FF8700861A45 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		B68141621299FF8700861A45 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ResultViewController.xib; path = Classes/ResultViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +203,7 @@
 		B6813EDB1299B8A300861A45 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B68141621299FF8700861A45 /* ResultViewController.xib */,
 				B6813F431299C37300861A45 /* GameViewController.xib */,
 				B6813EFD1299BC9500861A45 /* StatsViewController.xib */,
 				B6813EF81299BC8700861A45 /* ShopViewController.xib */,
@@ -304,6 +310,8 @@
 			children = (
 				B6813F411299C37300861A45 /* GameViewController.h */,
 				B6813F421299C37300861A45 /* GameViewController.m */,
+				B68141601299FF8700861A45 /* ResultViewController.h */,
+				B68141611299FF8700861A45 /* ResultViewController.m */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -387,6 +395,7 @@
 				B68141151299FC5800861A45 /* green_cross.png in Resources */,
 				B68141161299FC5800861A45 /* purple_cross.png in Resources */,
 				B68141431299FE4900861A45 /* blue_cross.png in Resources */,
+				B68141641299FF8700861A45 /* ResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +419,7 @@
 				B6813F641299C6EA00861A45 /* Move.m in Sources */,
 				B6813F671299C6F000861A45 /* Game.m in Sources */,
 				B6813F6B1299C70000861A45 /* GameBoard.m in Sources */,
+				B68141631299FF8700861A45 /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

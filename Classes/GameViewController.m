@@ -4,6 +4,7 @@
 #import "Game.h"
 #import "Move.h"
 #import "Player.h"
+#import "ResultViewController.h"
 
 @implementation GameViewController
 
@@ -62,7 +63,10 @@
 
 #pragma mark GAME PROTOCOL
 - (void) game:(Game*)game playerJustWon:(Player*)player{
-	NSLog(@"GV player %@ just won", [player name]);
+	ResultViewController *c = [[ResultViewController alloc] init];
+	[c setWinner:player];
+	[[self navigationController] pushViewController:c animated:YES];
+	[c release];	
 }
 
 - (void) game:(Game*)g newStateActive:(BOOL)active{

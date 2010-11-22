@@ -41,6 +41,9 @@
 	
 	// *** TODO: Should I broadcast this? ****
 
+	// Did we win with that?
+	[self checkForWin];
+
 	// Lets get the next active player
 	[self getNextActivePlayer];
 
@@ -110,7 +113,9 @@
 		}
 	}
 	
-	[delegate game:self playerJustWon:turn];
+	if (win) {
+		[delegate game:self playerJustWon:turn];
+	}
 }
 
 - (void) dealloc{
