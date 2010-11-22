@@ -8,9 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class Move;
+
+@protocol GameBoardTouchesProtocol <NSObject>
+@required
+- (void) clickedOnCell: (CGPoint)cell;
+@end
 
 @interface GameBoard : UIView {
-
+	id <GameBoardTouchesProtocol> delegate;
 }
+
+@property (retain, nonatomic) id delegate;
+
+-(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
+-(void) addMove:(Move*)m;
 
 @end

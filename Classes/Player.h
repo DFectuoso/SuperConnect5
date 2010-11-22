@@ -10,7 +10,15 @@
 
 
 @interface Player : NSObject {
-
+	BOOL local;
+	NSString *name;
+	UIImage *image;
 }
+
+@property BOOL local;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) UIImage *image;
+
++(NSString*)getHardCodedImageForIndex:(int)i;
 
 @end

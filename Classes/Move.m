@@ -11,4 +11,6 @@
 
 @implementation Move
 
+@synthesize cell, owner;
+
 @end

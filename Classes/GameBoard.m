@@ -7,10 +7,12 @@
 //
 
 #import "GameBoard.h"
-
+#import "GlobalDefines.h"
+#import "Move.h"
 
 @implementation GameBoard
 
+@synthesize delegate;
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
@@ -19,17 +21,46 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+	CGPoint pt = [[touches anyObject] locationInView:self];
+	CGPoint real = CGPointMake(floor(pt.x/CELL_SIZE), floor(pt.y/CELL_SIZE));
+	
+	[delegate clickedOnCell:real];
 }
-*/
+
+-(void) addMove:(Move*)m{
+	UIImageView* iv = [[UIImageView alloc] initWithImage:[[m owner] image]];
+	CGRect f = [iv frame];
+	f.origin.x = (m.cell.x * CELL_SIZE);
+	f.origin.y = (m.cell.y * CELL_SIZE);
+	[iv setFrame:f];
+	[self addSubview:iv];
+	[iv release];
+}
+
+- (void)drawRect:(CGRect)rect {
+	CGContextRef c = UIGraphicsGetCurrentContext();
+	
+    CGFloat blue[4] = {0.254f, 0.67f, 0.98f, 1.0f};
+    CGContextSetStrokeColor(c, blue);
+	CGContextSetLineWidth(c,2.0f);
+	for (int i = 0; i < BOARD_SIZE; i++) {
+		CGContextBeginPath(c);
+		CGContextMoveToPoint(c, 0.0f, i * CELL_SIZE);
+		CGContextAddLineToPoint(c, (BOARD_SIZE * CELL_SIZE), i * CELL_SIZE);
+		CGContextStrokePath(c);
+	}
+	
+	for (int i = 0; i < BOARD_SIZE; i++) {
+		CGContextBeginPath(c);
+		CGContextMoveToPoint(c, i * CELL_SIZE, 0);
+		CGContextAddLineToPoint(c, i * CELL_SIZE, BOARD_SIZE * CELL_SIZE);
+		CGContextStrokePath(c);
+	}	
+}
 
 - (void)dealloc {
     [super dealloc];
 }
-
 
 @end

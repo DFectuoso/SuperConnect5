@@ -161,7 +161,7 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<float key="IBUIValue">1</float>
 								<float key="IBUIMinValue">1</float>
-								<float key="IBUIMaxValue">4</float>
+								<float key="IBUIMaxValue">10</float>
 								<bool key="IBUIContinuous">NO</bool>
 							</object>
 							<object class="IBUILabel" id="323152976">

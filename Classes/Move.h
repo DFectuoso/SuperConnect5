@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class Player;
 
 @interface Move : NSObject {
-
+	CGPoint cell;
+	Player *owner;
 }
+
+@property CGPoint cell;
+@property (nonatomic, retain) Player* owner;
 
 @end

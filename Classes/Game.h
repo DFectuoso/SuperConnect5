@@ -8,9 +8,33 @@
 
 #import <Foundation/Foundation.h>
 
+@class Move, Game, Player;
+
+@protocol GameProtocol <NSObject>
+@required
+- (void) game:(Game*)game playerJustWon:(Player*)player;
+- (void) game:(Game*)game newStateActive:(BOOL)active;
+- (void) game:(Game*)game newMove:(Move*)move;
+@end
 
 @interface Game : NSObject {
+	id <GameProtocol> delegate;
 
+	NSMutableArray *players;
+	NSMutableArray *moves;
+	Player *turn;
 }
+
+@property (retain, nonatomic) id delegate;
+@property (nonatomic, retain) NSMutableArray *players;
+@property (nonatomic, retain) NSMutableArray *moves;
+@property (nonatomic, retain) Player* turn;
+
+- (void)  startLocally;
+
+- (void)  checkForWin;
+- (void)  getNextActivePlayer;
+- (void)  tryToAddMoveInCell:(CGPoint)cell;
+- (Move*) getMoveFromArrayWithCell:(CGPoint)cell;
 
 @end
