@@ -13,9 +13,16 @@
 }
 
 -(IBAction) goToNetworkGame:(id)sender{
-	NetworkGameViewController *c = [[NetworkGameViewController alloc] init];
-	[[self navigationController] pushViewController:c animated:YES];
-	[c release];	
+	[[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:^(NSError *error) {
+		if (error == nil) {
+			NetworkGameViewController *c = [[NetworkGameViewController alloc] init];
+			[[self navigationController] pushViewController:c animated:YES];
+			[c release];	
+		} else {
+			NSLog(@"Lolz");
+			// Your application can process the error parameter to report the error to the player.
+		}
+	}];
 }
 
 // We might want to show/do this only if we have a logged in user that has already played.
