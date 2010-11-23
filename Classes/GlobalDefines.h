@@ -7,6 +7,8 @@
  *
  */
 
+#import "NSMutableArray_Shuffling.h"
+
 #define CELL_SIZE 50
 #define BOARD_SIZE 50
 #define FIVE 5

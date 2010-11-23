@@ -24,17 +24,26 @@
 }
 
 -(void)tryToAddMoveInCell:(CGPoint)cell{
-	NSLog(@"G: try to add move");
-
 	// Is it a local player turn?
 	if (![turn local]) return;
 	
-	// Is the cell empty?
-	if ([self getMoveFromArrayWithCell:cell] != nil) return;
-	NSLog(@"G: try to add move after checks");
-
-	[self addMove:cell];
+	if ([self cellIsValid:cell]) {
+		[self addMove:cell];
+	}
 }
+
+- (BOOL)  cellIsValid:(CGPoint)cell{
+	// Is the cell empty?
+	if ([self getMoveFromArrayWithCell:cell] != nil) return NO;
+	
+	NSLog(@"x %i y %i", (int)cell.x, (int)cell.y);
+	if (cell.x > BOARD_SIZE - 1) return NO; 
+	if (cell.y > BOARD_SIZE - 1) return NO; 
+	if (cell.x < 0) return NO; 
+	if (cell.y < 0) return NO; 
+	return YES;
+}
+
 
 -(void)addMove:(CGPoint)cell{
 	// Create and add object
@@ -46,14 +55,16 @@
 	// *** TODO: Should I broadcast this? ****
 	
 	// Did we win with that?
-	[self checkForWin];
-	
-	// Lets get the next active player
-	[self getNextActivePlayer];
-	
-	// Lets alert the new state to the VC
-	// Lets alert the new move to the VC
-	[delegate game:self newMove:move];
+	if ([self checkForWin]) {
+		[delegate game:self playerJustWon:turn];
+	} else {
+		// Lets get the next active player
+		[self getNextActivePlayer];
+		
+		// Lets alert the new state to the VC
+		// Lets alert the new move to the VC
+		[delegate game:self newMove:move];		
+	}
 	
 	// Clean up
 	[move release];
@@ -66,7 +77,7 @@
 	}
 	turn = [players objectAtIndex:position];
 	if([turn computer]){
-		[self performSelector:@selector(computerMove) withObject:nil afterDelay:(arc4random() % 5000)/1000];
+		[self performSelector:@selector(computerMove) withObject:nil afterDelay:0.5 + ((arc4random() % 1500)/1000)];
 	}
 
 	[delegate game:self newStateActive:[turn local]];
@@ -88,7 +99,7 @@
 }
 
 
--(void)checkForWin{
+-(BOOL)checkForWin{
 	BOOL win = NO;
 	for (Move* m in moves) {
 		// DERECHA
@@ -128,9 +139,8 @@
 		}
 	}
 	
-	if (win) {
-		[delegate game:self playerJustWon:turn];
-	}
+	
+	return win;
 }
 
 - (void) dealloc{

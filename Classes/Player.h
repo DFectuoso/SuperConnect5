@@ -25,4 +25,13 @@
 +(NSString*)getHardCodedImageForIndex:(int)i;
 -(CGPoint)moveWithState:(NSArray*)moves andGame:(Game*)game;
 
+// Computer moves
+-(CGPoint)moveToWin:(NSArray*)moves andGame:(Game*)game;
+-(CGPoint)moveToStopSomeoneFromWinning:(NSArray*)moves andGame:(Game*)game;
+-(CGPoint)moveToStop4InARowWithState:(NSArray*)moves andGame:(Game*)game;
+-(CGPoint)moveToGet4InARowWithState:(NSArray*)moves andGame:(Game*)game;
+-(CGPoint)moveToGet3InARowWithState:(NSArray*)moves andGame:(Game*)game;
+-(CGPoint)moveCloseToOtherMovesWithState:(NSArray*)moves andGame:(Game*)game;
+-(CGPoint)moveRandomWithState:(NSArray*)moves andGame:(Game*)game;
+
 @end

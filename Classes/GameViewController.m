@@ -41,8 +41,7 @@
 			[p release];
 		}
 		
-		// ********TODO TODO Create computers for each computer
-		for (int i = 0; i < localPlayers; i++) {
+		for (int i = 0; i < computerPlayers; i++) {
 			Player* p = [[Player alloc] init];
 			[p setComputer:YES];
 			[p setName:[NSString stringWithFormat:@"Computer %i", i + 1]];
