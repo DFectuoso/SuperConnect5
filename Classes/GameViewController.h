@@ -7,19 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
 #import "GameBoard.h"
 #import "Game.h"
 
 @class GameBoard, Game, Move, Player;
 
-@interface GameViewController : UIViewController<GameProtocol, GameBoardTouchesProtocol> {
+@interface GameViewController : UIViewController<GameProtocol, GameBoardTouchesProtocol, GKMatchmakerViewControllerDelegate, GKMatchDelegate> {
 	IBOutlet UIImageView *header;
 	IBOutlet UIImageView *headerActive;
 	IBOutlet UILabel *headerLabel;
 	IBOutlet UIScrollView *scrollView;
 	
+	UIView *overlay;
 	GameBoard *gameBoard;
 	Game *game;
+	
+	BOOL matchStarted;
 	
 	int localPlayers;
 	int computerPlayers;
@@ -35,6 +39,11 @@
 // Set players with X Local X computers1
 
 - (void) centerToMove:(Move*)move;
+- (void) networkInit;
+- (void) networkInitAddedAnotherPlayerToTheArray;
+- (void) sendPlayerArray;
+- (void) startNetworkGame;
+- (void) sendMoveToNetwork:(Move*)m;
 
 // Implement GameBoard Protocol Functions:
 - (void) clickedOnCell: (CGPoint)cell;

@@ -31,6 +31,7 @@
 @property (nonatomic, retain) Player* turn;
 
 - (void)  startLocally;
+- (void)  startNetworkedGame;
 
 - (BOOL)  checkForWin;
 - (void)  computerMove;

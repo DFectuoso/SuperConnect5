@@ -13,6 +13,8 @@
 
 }
 
+-(IBAction) oneVsOneGameStart:(id)sender;
+-(IBAction) fourFFAGameStart:(id)sender;
 -(IBAction) backToMenu:(id)sender;
 
 @end

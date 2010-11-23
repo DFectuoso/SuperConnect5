@@ -23,6 +23,12 @@
 	[self getNextActivePlayer];
 }
 
+- (void)  startNetworkedGame{
+	turn = [players objectAtIndex:0];
+	[delegate game:self newStateActive:[turn local]];
+}
+
+
 -(void)tryToAddMoveInCell:(CGPoint)cell{
 	// Is it a local player turn?
 	if (![turn local]) return;
@@ -81,7 +87,6 @@
 	}
 
 	[delegate game:self newStateActive:[turn local]];
-
 }
 
 - (Move*)getMoveFromArrayWithCell:(CGPoint)cell{
