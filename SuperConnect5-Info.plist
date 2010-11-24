@@ -5,11 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>SConnect 5</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Logo57.png</string>
+		<string>Logo114.png</string>
+		<string>Logo72.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>dfectuoso.connect5</string>
 	<key>CFBundleInfoDictionaryVersion</key>

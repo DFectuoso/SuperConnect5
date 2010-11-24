@@ -52,6 +52,15 @@
 		B6B76F4F129CF3450095E339 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F4E129CF3450095E339 /* GameViewController.xib */; };
 		B6B76F53129CF3960095E339 /* NetworkGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F52129CF3960095E339 /* NetworkGameViewController.xib */; };
 		B6B76F56129CF3CA0095E339 /* LocalGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F55129CF3CA0095E339 /* LocalGameViewController.xib */; };
+		B6B76F74129CFAC10095E339 /* Logo48.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F70129CFAC10095E339 /* Logo48.png */; };
+		B6B76F75129CFAC10095E339 /* Logo57.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F71129CFAC10095E339 /* Logo57.png */; };
+		B6B76F76129CFAC10095E339 /* Logo72.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F72129CFAC10095E339 /* Logo72.png */; };
+		B6B76F77129CFAC10095E339 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F73129CFAC10095E339 /* iTunesArtwork */; };
+		B6B76F79129CFB850095E339 /* Logo114.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F78129CFB850095E339 /* Logo114.png */; };
+		B6B76F88129CFC6F0095E339 /* LogoNoBackSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F86129CFC6F0095E339 /* LogoNoBackSmall.png */; };
+		B6B76F89129CFC6F0095E339 /* LogoNoBack.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F87129CFC6F0095E339 /* LogoNoBack.png */; };
+		B6B76F92129CFE220095E339 /* LocalButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F91129CFE220095E339 /* LocalButton.png */; };
+		B6B76FAB129CFEE00095E339 /* NetworkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76FAA129CFEE00095E339 /* NetworkButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +126,15 @@
 		B6B76F4E129CF3450095E339 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = "Resources-iPad/GameViewController.xib"; sourceTree = "<group>"; };
 		B6B76F52129CF3960095E339 /* NetworkGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NetworkGameViewController.xib; path = "Resources-iPad/NetworkGameViewController.xib"; sourceTree = "<group>"; };
 		B6B76F55129CF3CA0095E339 /* LocalGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LocalGameViewController.xib; path = "Resources-iPad/LocalGameViewController.xib"; sourceTree = "<group>"; };
+		B6B76F70129CFAC10095E339 /* Logo48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo48.png; sourceTree = "<group>"; };
+		B6B76F71129CFAC10095E339 /* Logo57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo57.png; sourceTree = "<group>"; };
+		B6B76F72129CFAC10095E339 /* Logo72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo72.png; sourceTree = "<group>"; };
+		B6B76F73129CFAC10095E339 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		B6B76F78129CFB850095E339 /* Logo114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo114.png; sourceTree = "<group>"; };
+		B6B76F86129CFC6F0095E339 /* LogoNoBackSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoNoBackSmall.png; sourceTree = "<group>"; };
+		B6B76F87129CFC6F0095E339 /* LogoNoBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoNoBack.png; sourceTree = "<group>"; };
+		B6B76F91129CFE220095E339 /* LocalButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocalButton.png; sourceTree = "<group>"; };
+		B6B76FAA129CFEE00095E339 /* NetworkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NetworkButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +228,15 @@
 		B6813EDA1299B89E00861A45 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B6B76F91129CFE220095E339 /* LocalButton.png */,
+				B6B76FAA129CFEE00095E339 /* NetworkButton.png */,
+				B6B76F86129CFC6F0095E339 /* LogoNoBackSmall.png */,
+				B6B76F87129CFC6F0095E339 /* LogoNoBack.png */,
+				B6B76F70129CFAC10095E339 /* Logo48.png */,
+				B6B76F71129CFAC10095E339 /* Logo57.png */,
+				B6B76F72129CFAC10095E339 /* Logo72.png */,
+				B6B76F78129CFB850095E339 /* Logo114.png */,
+				B6B76F73129CFAC10095E339 /* iTunesArtwork */,
 				B68141031299FC5800861A45 /* blue_circle.png */,
 				B68141041299FC5800861A45 /* green_circle.png */,
 				B68141051299FC5800861A45 /* purple_circle.png */,
@@ -440,6 +467,15 @@
 				B6B76F4F129CF3450095E339 /* GameViewController.xib in Resources */,
 				B6B76F53129CF3960095E339 /* NetworkGameViewController.xib in Resources */,
 				B6B76F56129CF3CA0095E339 /* LocalGameViewController.xib in Resources */,
+				B6B76F74129CFAC10095E339 /* Logo48.png in Resources */,
+				B6B76F75129CFAC10095E339 /* Logo57.png in Resources */,
+				B6B76F76129CFAC10095E339 /* Logo72.png in Resources */,
+				B6B76F77129CFAC10095E339 /* iTunesArtwork in Resources */,
+				B6B76F79129CFB850095E339 /* Logo114.png in Resources */,
+				B6B76F88129CFC6F0095E339 /* LogoNoBackSmall.png in Resources */,
+				B6B76F89129CFC6F0095E339 /* LogoNoBack.png in Resources */,
+				B6B76F92129CFE220095E339 /* LocalButton.png in Resources */,
+				B6B76FAB129CFEE00095E339 /* NetworkButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
