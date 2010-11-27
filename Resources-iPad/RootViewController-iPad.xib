@@ -45,13 +45,13 @@
 					<object class="IBUIImageView" id="906431153">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{216, 389}, {320, 460}}</string>
+						<string key="NSFrame">{{0, -19}, {768, 1024}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">menuBackground.png</string>
+							<string key="NSResourceName">background.png</string>
 						</object>
 					</object>
 					<object class="IBUIView" id="1025778300">
@@ -59,23 +59,10 @@
 						<int key="NSvFlags">292</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIImageView" id="23869398">
-								<reference key="NSNextResponder" ref="1025778300"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 0}, {240, 196}}</string>
-								<reference key="NSSuperview" ref="1025778300"/>
-								<int key="IBUIContentMode">4</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<object class="NSCustomResource" key="IBUIImage">
-									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">LogoNoBackSmall.png</string>
-								</object>
-							</object>
 							<object class="IBUIButton" id="605100769">
 								<reference key="NSNextResponder" ref="1025778300"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{28, 248}, {224, 68}}</string>
+								<string key="NSFrame">{{77, 535}, {514, 148}}</string>
 								<reference key="NSSuperview" ref="1025778300"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -100,11 +87,32 @@
 								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">LocalButton.png</string>
+									<string key="NSResourceName">LocalButtonBig.png</string>
+								</object>
+							</object>
+							<object class="IBUIButton" id="95084029">
+								<reference key="NSNextResponder" ref="1025778300"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{96, 673}, {476, 173}}</string>
+								<reference key="NSSuperview" ref="1025778300"/>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<reference key="IBUIFont" ref="520779940"/>
+								<reference key="IBUIHighlightedTitleColor" ref="88541590"/>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="526016359"/>
+								<object class="NSCustomResource" key="IBUINormalImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">NetworkButtonBig.png</string>
 								</object>
 							</object>
 						</object>
-						<string key="NSFrame">{{236, 409}, {280, 420}}</string>
+						<string key="NSFrame">{{50, 50}, {668, 924}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -113,26 +121,17 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
-					<object class="IBUIButton" id="95084029">
+					<object class="IBUIImageView" id="23869398">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{264, 742}, {224, 68}}</string>
+						<string key="NSFrame">{{64, 20}, {640, 572}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<bool key="IBUIOpaque">NO</bool>
+						<int key="IBUIContentMode">4</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="520779940"/>
-						<string key="IBUINormalTitle">Internet Game</string>
-						<reference key="IBUIHighlightedTitleColor" ref="88541590"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="526016359"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
+						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">NetworkButton.png</string>
+							<string key="NSResourceName">LogoNoBack.png</string>
 						</object>
 					</object>
 				</object>
@@ -197,7 +196,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="906431153"/>
 							<reference ref="1025778300"/>
-							<reference ref="95084029"/>
+							<reference ref="23869398"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -222,24 +221,24 @@
 						<reference key="object" ref="1025778300"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="23869398"/>
 							<reference ref="605100769"/>
+							<reference ref="95084029"/>
 						</object>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">9</int>
-						<reference key="object" ref="95084029"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">16</int>
 						<reference key="object" ref="23869398"/>
-						<reference key="parent" ref="1025778300"/>
+						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
 						<reference key="object" ref="605100769"/>
+						<reference key="parent" ref="1025778300"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">9</int>
+						<reference key="object" ref="95084029"/>
 						<reference key="parent" ref="1025778300"/>
 					</object>
 				</object>
@@ -268,7 +267,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>RootViewController</string>
 					<string>UIResponder</string>
-					<string>{{13, 20}, {783, 736}}</string>
+					<string>{{13, 0}, {783, 756}}</string>
 					<object class="NSMutableDictionary">
 						<string key="NS.key.0">IBCocoaTouchFramework</string>
 						<integer value="0" key="NS.object.0"/>
@@ -276,7 +275,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCQAAAw1YAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCgAAAxBOAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -288,11 +287,11 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCQAAAw4UAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAxEIAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDiAAAxHwAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAADB8AAAxEwAAA</bytes>
 					</object>
 				</object>
 			</object>
@@ -326,13 +325,9 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>goToLocalGame:</string>
 							<string>goToNetworkGame:</string>
-							<string>goToShop:</string>
-							<string>goToStats:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -343,8 +338,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>goToLocalGame:</string>
 							<string>goToNetworkGame:</string>
-							<string>goToShop:</string>
-							<string>goToStats:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -354,14 +347,6 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">goToNetworkGame:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">goToShop:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">goToStats:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>
@@ -587,17 +572,17 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>LocalButton.png</string>
-				<string>LogoNoBackSmall.png</string>
-				<string>NetworkButton.png</string>
-				<string>menuBackground.png</string>
+				<string>LocalButtonBig.png</string>
+				<string>LogoNoBack.png</string>
+				<string>NetworkButtonBig.png</string>
+				<string>background.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{220, 70}</string>
-				<string>{150, 150}</string>
-				<string>{220, 70}</string>
-				<string>{320, 460}</string>
+				<string>{440, 140}</string>
+				<string>{512, 512}</string>
+				<string>{440, 140}</string>
+				<string>{768, 1024}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>

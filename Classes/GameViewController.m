@@ -247,7 +247,13 @@ GKMatch* myMatch;
 
 #pragma mark GAME PROTOCOL
 - (void) game:(Game*)game playerJustWon:(Player*)player{
-	ResultViewController *c = [[ResultViewController alloc] init];
+	ResultViewController *c;
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		c = [[ResultViewController alloc] initWithNibName:@"ResultViewController-iPad" bundle:nil];
+	} else {
+		c = [[ResultViewController alloc] initWithNibName:@"ResultViewController" bundle:nil];
+	}
+
 	[c setWinner:player];
 	[[self navigationController] pushViewController:c animated:YES];
 	[c release];	

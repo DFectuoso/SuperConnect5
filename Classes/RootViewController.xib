@@ -45,13 +45,14 @@
 					<object class="IBUIImageView" id="906431153">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{320, 460}</string>
+						<string key="NSFrameSize">{359, 485}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<int key="IBUIContentMode">4</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">menuBackground.png</string>
+							<string key="NSResourceName">background.png</string>
 						</object>
 					</object>
 					<object class="IBUIView" id="1025778300">
@@ -193,9 +194,9 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="906431153"/>
 							<reference ref="1025778300"/>
 							<reference ref="95084029"/>
+							<reference ref="906431153"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -209,11 +210,6 @@
 						<int key="objectID">-2</int>
 						<reference key="object" ref="975951072"/>
 						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">4</int>
-						<reference key="object" ref="906431153"/>
-						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
@@ -240,6 +236,11 @@
 						<reference key="object" ref="605100769"/>
 						<reference key="parent" ref="1025778300"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">4</int>
+						<reference key="object" ref="906431153"/>
+						<reference key="parent" ref="191373211"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -253,6 +254,7 @@
 					<string>16.IBPluginDependency</string>
 					<string>16.IBViewBoundsToFrameTransform</string>
 					<string>4.IBPluginDependency</string>
+					<string>4.IBViewBoundsToFrameTransform</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.IBViewBoundsToFrameTransform</string>
 					<string>8.IBPluginDependency</string>
@@ -264,13 +266,16 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>RootViewController</string>
 					<string>UIResponder</string>
-					<string>{{113, 256}, {320, 480}}</string>
+					<string>{{387, 210}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABCQAAAw1YAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw+gAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">AUGgAABBoAAAA</bytes>
@@ -315,13 +320,9 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>goToLocalGame:</string>
 							<string>goToNetworkGame:</string>
-							<string>goToShop:</string>
-							<string>goToStats:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -332,8 +333,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>goToLocalGame:</string>
 							<string>goToNetworkGame:</string>
-							<string>goToShop:</string>
-							<string>goToStats:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -343,14 +342,6 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">goToNetworkGame:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">goToShop:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">goToStats:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>
@@ -579,14 +570,14 @@
 				<string>LocalButton.png</string>
 				<string>LogoNoBackSmall.png</string>
 				<string>NetworkButton.png</string>
-				<string>menuBackground.png</string>
+				<string>background.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{220, 70}</string>
 				<string>{150, 150}</string>
 				<string>{220, 70}</string>
-				<string>{320, 460}</string>
+				<string>{768, 1024}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>
