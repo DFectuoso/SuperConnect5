@@ -9,11 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
-	<array>
-		<string>Logo57.png</string>
-		<string>Logo114.png</string>
-		<string>Logo72.png</string>
-	</array>
+	<array/>
 	<key>CFBundleIdentifier</key>
 	<string>dfectuoso.connect5</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -30,5 +26,7 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>NSMainNibFile~ipad</key>
+	<string>MainWindow-iPad</string>
 </dict>
 </plist>

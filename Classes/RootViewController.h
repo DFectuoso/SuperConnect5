@@ -16,8 +16,4 @@
 -(IBAction) goToLocalGame:(id)sender;
 -(IBAction) goToNetworkGame:(id)sender;
 
-// We might want to show/do this only if we have a logged in user that has already played.
--(IBAction) goToShop:(id)sender;
--(IBAction) goToStats:(id)sender;
-
 @end

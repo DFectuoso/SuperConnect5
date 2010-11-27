@@ -22,10 +22,6 @@
 		B6813EF01299BC7600861A45 /* LocalGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6813EEE1299BC7600861A45 /* LocalGameViewController.xib */; };
 		B6813EF41299BC8000861A45 /* NetworkGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813EF21299BC8000861A45 /* NetworkGameViewController.m */; };
 		B6813EF51299BC8000861A45 /* NetworkGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6813EF31299BC8000861A45 /* NetworkGameViewController.xib */; };
-		B6813EF91299BC8700861A45 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813EF71299BC8700861A45 /* ShopViewController.m */; };
-		B6813EFA1299BC8700861A45 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6813EF81299BC8700861A45 /* ShopViewController.xib */; };
-		B6813EFE1299BC9500861A45 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813EFC1299BC9500861A45 /* StatsViewController.m */; };
-		B6813EFF1299BC9500861A45 /* StatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6813EFD1299BC9500861A45 /* StatsViewController.xib */; };
 		B6813F441299C37300861A45 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F421299C37300861A45 /* GameViewController.m */; };
 		B6813F451299C37300861A45 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6813F431299C37300861A45 /* GameViewController.xib */; };
 		B6813F5E1299C6DB00861A45 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F5D1299C6DB00861A45 /* Player.m */; };
@@ -58,6 +54,12 @@
 		B6B76FB3129D87560095E339 /* Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B76FB2129D87560095E339 /* Piece.m */; };
 		B6B76FB9129D886E0095E339 /* StartGame.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76FB8129D886E0095E339 /* StartGame.png */; };
 		B6B76FBB129D88DB0095E339 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76FBA129D88DB0095E339 /* BackButton.png */; };
+		B6B771B112A0E2730095E339 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771B012A0E2730095E339 /* MainWindow-iPad.xib */; };
+		B6B771BA12A0E2BB0095E339 /* RootViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771B912A0E2BB0095E339 /* RootViewController-iPad.xib */; };
+		B6B771D512A0E35A0095E339 /* ResultViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771D412A0E35A0095E339 /* ResultViewController-iPad.xib */; };
+		B6B771D712A0E3900095E339 /* GameViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771D612A0E3900095E339 /* GameViewController-iPad.xib */; };
+		B6B771D912A0E3B90095E339 /* NetworkGameViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771D812A0E3B90095E339 /* NetworkGameViewController-iPad.xib */; };
+		B6B771DF12A0E3DA0095E339 /* LocalGameViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771DE12A0E3DA0095E339 /* LocalGameViewController-iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,12 +86,6 @@
 		B6813EF11299BC8000861A45 /* NetworkGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkGameViewController.h; sourceTree = "<group>"; };
 		B6813EF21299BC8000861A45 /* NetworkGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkGameViewController.m; sourceTree = "<group>"; };
 		B6813EF31299BC8000861A45 /* NetworkGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NetworkGameViewController.xib; path = Classes/NetworkGameViewController.xib; sourceTree = "<group>"; };
-		B6813EF61299BC8700861A45 /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
-		B6813EF71299BC8700861A45 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
-		B6813EF81299BC8700861A45 /* ShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ShopViewController.xib; path = Classes/ShopViewController.xib; sourceTree = "<group>"; };
-		B6813EFB1299BC9500861A45 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
-		B6813EFC1299BC9500861A45 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
-		B6813EFD1299BC9500861A45 /* StatsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StatsViewController.xib; path = Classes/StatsViewController.xib; sourceTree = "<group>"; };
 		B6813F411299C37300861A45 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		B6813F421299C37300861A45 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		B6813F431299C37300861A45 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
@@ -130,6 +126,12 @@
 		B6B76FB2129D87560095E339 /* Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piece.m; sourceTree = "<group>"; };
 		B6B76FB8129D886E0095E339 /* StartGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartGame.png; sourceTree = "<group>"; };
 		B6B76FBA129D88DB0095E339 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		B6B771B012A0E2730095E339 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		B6B771B912A0E2BB0095E339 /* RootViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "RootViewController-iPad.xib"; path = "Resources-iPad/RootViewController-iPad.xib"; sourceTree = "<group>"; };
+		B6B771D412A0E35A0095E339 /* ResultViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "ResultViewController-iPad.xib"; path = "Resources-iPad/ResultViewController-iPad.xib"; sourceTree = "<group>"; };
+		B6B771D612A0E3900095E339 /* GameViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "GameViewController-iPad.xib"; path = "Resources-iPad/GameViewController-iPad.xib"; sourceTree = "<group>"; };
+		B6B771D812A0E3B90095E339 /* NetworkGameViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "NetworkGameViewController-iPad.xib"; path = "Resources-iPad/NetworkGameViewController-iPad.xib"; sourceTree = "<group>"; };
+		B6B771DE12A0E3DA0095E339 /* LocalGameViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "LocalGameViewController-iPad.xib"; path = "Resources-iPad/LocalGameViewController-iPad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				B6813EDC1299B8AA00861A45 /* Stuff */,
-				B6813EDB1299B8A300861A45 /* ViewControllers */,
+				B6B771D312A0E32A0095E339 /* ViewControllers-iPad */,
+				B6813EDB1299B8A300861A45 /* ViewControllers-iPhone */,
 				B6813EDA1299B89E00861A45 /* Images */,
 			);
 			name = Resources;
@@ -250,24 +253,23 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		B6813EDB1299B8A300861A45 /* ViewControllers */ = {
+		B6813EDB1299B8A300861A45 /* ViewControllers-iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				B6813ECD1299B77200861A45 /* RootViewController.xib */,
 				B68141621299FF8700861A45 /* ResultViewController.xib */,
 				B6813F431299C37300861A45 /* GameViewController.xib */,
-				B6813EFD1299BC9500861A45 /* StatsViewController.xib */,
-				B6813EF81299BC8700861A45 /* ShopViewController.xib */,
 				B6813EF31299BC8000861A45 /* NetworkGameViewController.xib */,
 				B6813EEE1299BC7600861A45 /* LocalGameViewController.xib */,
-				B6813ECD1299B77200861A45 /* RootViewController.xib */,
 			);
-			name = ViewControllers;
+			name = "ViewControllers-iPhone";
 			sourceTree = "<group>";
 		};
 		B6813EDC1299B8AA00861A45 /* Stuff */ = {
 			isa = PBXGroup;
 			children = (
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				B6B771B012A0E2730095E339 /* MainWindow-iPad.xib */,
 				8D1107310486CEB800E47090 /* SuperConnect5-Info.plist */,
 			);
 			name = Stuff;
@@ -286,8 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				B6813F401299C36A00861A45 /* Game */,
-				B6813EEB1299BC6700861A45 /* Stats */,
-				B6813EEA1299BC6000861A45 /* Shop */,
 				B6813EE91299BC5800861A45 /* NetworkGame */,
 				B6813EE81299BC4900861A45 /* LocalGame */,
 				B6813EE71299BC4300861A45 /* Menu */,
@@ -337,24 +337,6 @@
 			name = NetworkGame;
 			sourceTree = "<group>";
 		};
-		B6813EEA1299BC6000861A45 /* Shop */ = {
-			isa = PBXGroup;
-			children = (
-				B6813EF61299BC8700861A45 /* ShopViewController.h */,
-				B6813EF71299BC8700861A45 /* ShopViewController.m */,
-			);
-			name = Shop;
-			sourceTree = "<group>";
-		};
-		B6813EEB1299BC6700861A45 /* Stats */ = {
-			isa = PBXGroup;
-			children = (
-				B6813EFB1299BC9500861A45 /* StatsViewController.h */,
-				B6813EFC1299BC9500861A45 /* StatsViewController.m */,
-			);
-			name = Stats;
-			sourceTree = "<group>";
-		};
 		B6813F401299C36A00861A45 /* Game */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +355,18 @@
 				B6813F6A1299C70000861A45 /* GameBoard.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		B6B771D312A0E32A0095E339 /* ViewControllers-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				B6B771B912A0E2BB0095E339 /* RootViewController-iPad.xib */,
+				B6B771D412A0E35A0095E339 /* ResultViewController-iPad.xib */,
+				B6B771D612A0E3900095E339 /* GameViewController-iPad.xib */,
+				B6B771D812A0E3B90095E339 /* NetworkGameViewController-iPad.xib */,
+				B6B771DE12A0E3DA0095E339 /* LocalGameViewController-iPad.xib */,
+			);
+			name = "ViewControllers-iPad";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,8 +424,6 @@
 				B6813ED91299B89C00861A45 /* menuBackground.png in Resources */,
 				B6813EF01299BC7600861A45 /* LocalGameViewController.xib in Resources */,
 				B6813EF51299BC8000861A45 /* NetworkGameViewController.xib in Resources */,
-				B6813EFA1299BC8700861A45 /* ShopViewController.xib in Resources */,
-				B6813EFF1299BC9500861A45 /* StatsViewController.xib in Resources */,
 				B6813F451299C37300861A45 /* GameViewController.xib in Resources */,
 				B6813F8C1299E7E900861A45 /* GameHeader.png in Resources */,
 				B6813F8D1299E7E900861A45 /* GameHeaderActive.png in Resources */,
@@ -457,6 +449,12 @@
 				B6B76FAB129CFEE00095E339 /* NetworkButton.png in Resources */,
 				B6B76FB9129D886E0095E339 /* StartGame.png in Resources */,
 				B6B76FBB129D88DB0095E339 /* BackButton.png in Resources */,
+				B6B771B112A0E2730095E339 /* MainWindow-iPad.xib in Resources */,
+				B6B771BA12A0E2BB0095E339 /* RootViewController-iPad.xib in Resources */,
+				B6B771D512A0E35A0095E339 /* ResultViewController-iPad.xib in Resources */,
+				B6B771D712A0E3900095E339 /* GameViewController-iPad.xib in Resources */,
+				B6B771D912A0E3B90095E339 /* NetworkGameViewController-iPad.xib in Resources */,
+				B6B771DF12A0E3DA0095E339 /* LocalGameViewController-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,8 +470,6 @@
 				B6813ECE1299B77200861A45 /* RootViewController.m in Sources */,
 				B6813EEF1299BC7600861A45 /* LocalGameViewController.m in Sources */,
 				B6813EF41299BC8000861A45 /* NetworkGameViewController.m in Sources */,
-				B6813EF91299BC8700861A45 /* ShopViewController.m in Sources */,
-				B6813EFE1299BC9500861A45 /* StatsViewController.m in Sources */,
 				B6813F441299C37300861A45 /* GameViewController.m in Sources */,
 				B6813F5E1299C6DB00861A45 /* Player.m in Sources */,
 				B6813F641299C6EA00861A45 /* Move.m in Sources */,
@@ -525,13 +521,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Santiago Zavala (PTHG827KL3)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2B4E42DF-FDE3-4AA8-9B9F-0F38CBB30AE4";
 				SDKROOT = iphoneos4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
 		};
@@ -539,14 +537,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Santiago Zavala (PTHG827KL3)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2B4E42DF-FDE3-4AA8-9B9F-0F38CBB30AE4";
 				SDKROOT = iphoneos4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;
 		};

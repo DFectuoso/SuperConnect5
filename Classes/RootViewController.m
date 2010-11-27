@@ -1,13 +1,11 @@
 #import "RootViewController.h"
-#import "ShopViewController.h"
-#import "StatsViewController.h"
 #import "LocalGameViewController.h"
 #import "NetworkGameViewController.h"
 
 @implementation RootViewController
 
 -(IBAction) goToLocalGame:(id)sender{
-
+	
 	LocalGameViewController *c;
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 		c = [[LocalGameViewController alloc] initWithNibName:@"LocalGameViewController-iPad" bundle:nil];
@@ -19,8 +17,6 @@
 }
 
 -(IBAction) goToNetworkGame:(id)sender{
-	// TODO Show a overlay
-
 	[[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:^(NSError *error) {
 		if (error == nil) {
 			NetworkGameViewController *c;
@@ -33,23 +29,11 @@
 			[c release];	
 		} else {
 			NSLog(@"Lolz");
-			// Hide overlay
+			// Your application can process the error parameter to report the error to the player.
 		}
 	}];
 }
 
-// We might want to show/do this only if we have a logged in user that has already played.
--(IBAction) goToShop:(id)sender{
-	ShopViewController *c = [[ShopViewController alloc] init];
-	[[self navigationController] pushViewController:c animated:YES];
-	[c release];	
-}
-
--(IBAction) goToStats:(id)sender{
-	StatsViewController *c = [[StatsViewController alloc] init];
-	[[self navigationController] pushViewController:c animated:YES];
-	[c release];	
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -14,7 +14,12 @@
 }
 
 -(IBAction) startGame:(id)sender{
-	GameViewController *gameVC = [[GameViewController alloc] init];
+	GameViewController *gameVC;
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		gameVC = [[GameViewController alloc] initWithNibName:@"GameViewController-iPad" bundle:nil];
+	} else {
+		gameVC = [[GameViewController alloc] initWithNibName:@"GameViewController" bundle:nil];
+	}
 	[gameVC setLocalPlayers:(int)[localPlayersSlider value]];
 	[gameVC setComputerPlayers:(int)[computerPlayersSlider value]];
 	
