@@ -16,7 +16,11 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
-        // Initialization code
+		lastMove = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+		[lastMove setAlpha:0.3];
+		[lastMove setHidden:YES];
+		[lastMove setBackgroundColor:[UIColor greenColor]];
+		[self addSubview:lastMove];
     }
     return self;
 }
@@ -29,10 +33,14 @@
 }
 
 -(void) addMove:(Move*)m{
+	
 	UIImageView* iv = [[UIImageView alloc] initWithImage:[[m owner] image]];
 	CGRect f = [iv frame];
 	f.origin.x = (m.cell.x * CELL_SIZE);
 	f.origin.y = (m.cell.y * CELL_SIZE);
+
+	[lastMove setHidden:NO];
+	[lastMove setFrame:f];
 	[iv setFrame:f];
 	[self addSubview:iv];
 	[iv release];
@@ -60,6 +68,7 @@
 }
 
 - (void)dealloc {
+	[lastMove release];
     [super dealloc];
 }
 

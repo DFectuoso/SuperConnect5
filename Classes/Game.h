@@ -23,6 +23,8 @@
 	NSMutableArray *players;
 	NSMutableArray *moves;
 	Player *turn;
+	
+	UIView *lastMove;
 }
 
 @property (retain, nonatomic) id delegate;

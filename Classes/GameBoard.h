@@ -17,6 +17,8 @@
 
 @interface GameBoard : UIView {
 	id <GameBoardTouchesProtocol> delegate;
+	
+	UIView *lastMove;
 }
 
 @property (retain, nonatomic) id delegate;
