@@ -53,6 +53,7 @@ GKMatch* myMatch;
 		}
 		
 		[game startLocally];
+		[turnImageView setImage:[[game turn] image]];
 	} else {
 		GKMatchRequest *request = [[[GKMatchRequest alloc] init] autorelease];
 		request.minPlayers = localPlayers + networkPlayers;
@@ -186,6 +187,7 @@ GKMatch* myMatch;
 - (void) networkInitAddedAnotherPlayerToTheArray{
 	if ([[game players] count] != localPlayers + networkPlayers) return;
 	[[game players] shuffle];
+	[turnImageView setImage:[[game turn] image]];
 	
 	// Send players array to everyone
 	[self sendPlayerArray];
@@ -265,6 +267,7 @@ GKMatch* myMatch;
 }
 
 - (void) game:(Game*)game newMove:(Move*)move{
+	[turnImageView setImage:[[game turn] image]];
 	[gameBoard addMove:move];
 	if (networkPlayers > 0 && [[move owner] local] == YES) {
 		[self sendMoveToNetwork:move];

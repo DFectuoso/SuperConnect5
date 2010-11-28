@@ -22,13 +22,13 @@ I would like to refactor:
 -> Move the networking code to a networking class
 
 Things to do:
+-> Add sign in the play screen
 -> Test with more than 2 people
 -> Make the Symbol and image be the same on all clients
--> Nice background
--> Nice logo
+  -> Piece has an id, form string, color string; Is it core data?g
+
 -> Achievements
--> Make the computer random move make it closer to the game
--> Make it ipad friendly!!!
+-> Make the cmputer random move make it closer to the game
 
 Later:
 -> Leaderboard

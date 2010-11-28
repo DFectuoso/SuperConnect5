@@ -18,6 +18,7 @@
 	IBOutlet UIImageView *headerActive;
 	IBOutlet UILabel *headerLabel;
 	IBOutlet UIScrollView *scrollView;
+	IBOutlet UIImageView *turnImageView;
 	
 	UIView *overlay;
 	GameBoard *gameBoard;
