@@ -27,30 +27,15 @@
 		B6813F641299C6EA00861A45 /* Move.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F631299C6EA00861A45 /* Move.m */; };
 		B6813F671299C6F000861A45 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F661299C6F000861A45 /* Game.m */; };
 		B6813F6B1299C70000861A45 /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B6813F6A1299C70000861A45 /* GameBoard.m */; };
-		B681404F1299F54900861A45 /* red_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = B681404E1299F54900861A45 /* red_cross.png */; };
 		B68141631299FF8700861A45 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68141611299FF8700861A45 /* ResultViewController.m */; };
 		B68141641299FF8700861A45 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68141621299FF8700861A45 /* ResultViewController.xib */; };
-		B6B76F92129CFE220095E339 /* LocalButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76F91129CFE220095E339 /* LocalButton.png */; };
-		B6B76FAB129CFEE00095E339 /* NetworkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76FAA129CFEE00095E339 /* NetworkButton.png */; };
 		B6B76FB3129D87560095E339 /* Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B76FB2129D87560095E339 /* Piece.m */; };
-		B6B76FB9129D886E0095E339 /* StartGame.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76FB8129D886E0095E339 /* StartGame.png */; };
-		B6B76FBB129D88DB0095E339 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B76FBA129D88DB0095E339 /* BackButton.png */; };
 		B6B771B112A0E2730095E339 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771B012A0E2730095E339 /* MainWindow-iPad.xib */; };
 		B6B771BA12A0E2BB0095E339 /* RootViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771B912A0E2BB0095E339 /* RootViewController-iPad.xib */; };
 		B6B771D512A0E35A0095E339 /* ResultViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771D412A0E35A0095E339 /* ResultViewController-iPad.xib */; };
 		B6B771D712A0E3900095E339 /* GameViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771D612A0E3900095E339 /* GameViewController-iPad.xib */; };
 		B6B771D912A0E3B90095E339 /* NetworkGameViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771D812A0E3B90095E339 /* NetworkGameViewController-iPad.xib */; };
 		B6B771DF12A0E3DA0095E339 /* LocalGameViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B771DE12A0E3DA0095E339 /* LocalGameViewController-iPad.xib */; };
-		B6B7722E12A0EB9A0095E339 /* LocalButtonBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7722D12A0EB9A0095E339 /* LocalButtonBig.png */; };
-		B6B7723012A0EBE50095E339 /* NetworkButtonBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7722F12A0EBE50095E339 /* NetworkButtonBig.png */; };
-		B6B7727A12A0F72F0095E339 /* BackButtonBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7727812A0F72F0095E339 /* BackButtonBig.png */; };
-		B6B7727B12A0F72F0095E339 /* StartGameBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7727912A0F72F0095E339 /* StartGameBig.png */; };
-		B6B7729112A0F8B00095E339 /* 4ffa.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7728F12A0F8B00095E339 /* 4ffa.png */; };
-		B6B7729212A0F8B00095E339 /* 1vs1.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7729012A0F8B00095E339 /* 1vs1.png */; };
-		B6B7729712A0F9CF0095E339 /* 4ffaBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7729512A0F9CF0095E339 /* 4ffaBig.png */; };
-		B6B7729812A0F9CF0095E339 /* 1vs1Big.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7729612A0F9CF0095E339 /* 1vs1Big.png */; };
-		B6B7729B12A0FA8C0095E339 /* winnerBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7729A12A0FA8C0095E339 /* winnerBig.png */; };
-		B6B7729E12A0FAE70095E339 /* winner.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7729D12A0FAE70095E339 /* winner.png */; };
 		B6B772E812A2D5170095E339 /* ComputerMove.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B772E712A2D5170095E339 /* ComputerMove.m */; };
 		B6B7730A12A4C3160095E339 /* GameHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7730812A4C3160095E339 /* GameHeader.png */; };
 		B6B7730B12A4C3160095E339 /* GameHeaderActive.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7730912A4C3160095E339 /* GameHeaderActive.png */; };
@@ -84,6 +69,20 @@
 		B6B7738512A4CA070095E339 /* icono20.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7736F12A4CA070095E339 /* icono20.png */; };
 		B6B7738612A4CA070095E339 /* icono21.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7737012A4CA070095E339 /* icono21.png */; };
 		B6B7738712A4CA070095E339 /* icono23.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7737112A4CA070095E339 /* icono23.png */; };
+		B6B773BB12A4CDEF0095E339 /* winnerBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B773B912A4CDEF0095E339 /* winnerBig.png */; };
+		B6B773BC12A4CDEF0095E339 /* winner.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B773BA12A4CDEF0095E339 /* winner.png */; };
+		B6B773C112A4CE100095E339 /* LocalButtonBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B773BF12A4CE100095E339 /* LocalButtonBig.png */; };
+		B6B773C212A4CE100095E339 /* LocalButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B773C012A4CE100095E339 /* LocalButton.png */; };
+		B6B7743512A4D5FC0095E339 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7742F12A4D5FC0095E339 /* BackButton.png */; };
+		B6B7743612A4D5FC0095E339 /* BackButtonBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7743012A4D5FC0095E339 /* BackButtonBig.png */; };
+		B6B7743712A4D5FC0095E339 /* NetworkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7743112A4D5FC0095E339 /* NetworkButton.png */; };
+		B6B7743812A4D5FC0095E339 /* NetworkButtonBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7743212A4D5FC0095E339 /* NetworkButtonBig.png */; };
+		B6B7743912A4D5FC0095E339 /* StartGame.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7743312A4D5FC0095E339 /* StartGame.png */; };
+		B6B7743A12A4D5FC0095E339 /* StartGameBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7743412A4D5FC0095E339 /* StartGameBig.png */; };
+		B6B7746212A4DD570095E339 /* 4ffaBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7745E12A4DD570095E339 /* 4ffaBig.png */; };
+		B6B7746312A4DD570095E339 /* 4ffa.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7745F12A4DD570095E339 /* 4ffa.png */; };
+		B6B7746412A4DD570095E339 /* 1vs1.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7746012A4DD570095E339 /* 1vs1.png */; };
+		B6B7746512A4DD570095E339 /* 1vs1Big.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7746112A4DD570095E339 /* 1vs1Big.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,32 +120,17 @@
 		B6813F691299C70000861A45 /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoard.h; sourceTree = "<group>"; };
 		B6813F6A1299C70000861A45 /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
 		B6813F7E1299C83A00861A45 /* GlobalDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefines.h; sourceTree = "<group>"; };
-		B681404E1299F54900861A45 /* red_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_cross.png; sourceTree = "<group>"; };
 		B68141601299FF8700861A45 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
 		B68141611299FF8700861A45 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		B68141621299FF8700861A45 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ResultViewController.xib; path = Classes/ResultViewController.xib; sourceTree = "<group>"; };
-		B6B76F91129CFE220095E339 /* LocalButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocalButton.png; sourceTree = "<group>"; };
-		B6B76FAA129CFEE00095E339 /* NetworkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NetworkButton.png; sourceTree = "<group>"; };
 		B6B76FB1129D87560095E339 /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
 		B6B76FB2129D87560095E339 /* Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piece.m; sourceTree = "<group>"; };
-		B6B76FB8129D886E0095E339 /* StartGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartGame.png; sourceTree = "<group>"; };
-		B6B76FBA129D88DB0095E339 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
 		B6B771B012A0E2730095E339 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		B6B771B912A0E2BB0095E339 /* RootViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "RootViewController-iPad.xib"; path = "Resources-iPad/RootViewController-iPad.xib"; sourceTree = "<group>"; };
 		B6B771D412A0E35A0095E339 /* ResultViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "ResultViewController-iPad.xib"; path = "Resources-iPad/ResultViewController-iPad.xib"; sourceTree = "<group>"; };
 		B6B771D612A0E3900095E339 /* GameViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "GameViewController-iPad.xib"; path = "Resources-iPad/GameViewController-iPad.xib"; sourceTree = "<group>"; };
 		B6B771D812A0E3B90095E339 /* NetworkGameViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "NetworkGameViewController-iPad.xib"; path = "Resources-iPad/NetworkGameViewController-iPad.xib"; sourceTree = "<group>"; };
 		B6B771DE12A0E3DA0095E339 /* LocalGameViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "LocalGameViewController-iPad.xib"; path = "Resources-iPad/LocalGameViewController-iPad.xib"; sourceTree = "<group>"; };
-		B6B7722D12A0EB9A0095E339 /* LocalButtonBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocalButtonBig.png; sourceTree = "<group>"; };
-		B6B7722F12A0EBE50095E339 /* NetworkButtonBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NetworkButtonBig.png; sourceTree = "<group>"; };
-		B6B7727812A0F72F0095E339 /* BackButtonBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButtonBig.png; sourceTree = "<group>"; };
-		B6B7727912A0F72F0095E339 /* StartGameBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartGameBig.png; sourceTree = "<group>"; };
-		B6B7728F12A0F8B00095E339 /* 4ffa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4ffa.png; sourceTree = "<group>"; };
-		B6B7729012A0F8B00095E339 /* 1vs1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1vs1.png; sourceTree = "<group>"; };
-		B6B7729512A0F9CF0095E339 /* 4ffaBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4ffaBig.png; sourceTree = "<group>"; };
-		B6B7729612A0F9CF0095E339 /* 1vs1Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1vs1Big.png; sourceTree = "<group>"; };
-		B6B7729A12A0FA8C0095E339 /* winnerBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winnerBig.png; sourceTree = "<group>"; };
-		B6B7729D12A0FAE70095E339 /* winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winner.png; sourceTree = "<group>"; };
 		B6B772E612A2D5170095E339 /* ComputerMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerMove.h; sourceTree = "<group>"; };
 		B6B772E712A2D5170095E339 /* ComputerMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerMove.m; sourceTree = "<group>"; };
 		B6B7730812A4C3160095E339 /* GameHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameHeader.png; sourceTree = "<group>"; };
@@ -181,6 +165,20 @@
 		B6B7736F12A4CA070095E339 /* icono20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono20.png; sourceTree = "<group>"; };
 		B6B7737012A4CA070095E339 /* icono21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono21.png; sourceTree = "<group>"; };
 		B6B7737112A4CA070095E339 /* icono23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono23.png; sourceTree = "<group>"; };
+		B6B773B912A4CDEF0095E339 /* winnerBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winnerBig.png; sourceTree = "<group>"; };
+		B6B773BA12A4CDEF0095E339 /* winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winner.png; sourceTree = "<group>"; };
+		B6B773BF12A4CE100095E339 /* LocalButtonBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocalButtonBig.png; sourceTree = "<group>"; };
+		B6B773C012A4CE100095E339 /* LocalButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocalButton.png; sourceTree = "<group>"; };
+		B6B7742F12A4D5FC0095E339 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		B6B7743012A4D5FC0095E339 /* BackButtonBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButtonBig.png; sourceTree = "<group>"; };
+		B6B7743112A4D5FC0095E339 /* NetworkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NetworkButton.png; sourceTree = "<group>"; };
+		B6B7743212A4D5FC0095E339 /* NetworkButtonBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NetworkButtonBig.png; sourceTree = "<group>"; };
+		B6B7743312A4D5FC0095E339 /* StartGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartGame.png; sourceTree = "<group>"; };
+		B6B7743412A4D5FC0095E339 /* StartGameBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartGameBig.png; sourceTree = "<group>"; };
+		B6B7745E12A4DD570095E339 /* 4ffaBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4ffaBig.png; sourceTree = "<group>"; };
+		B6B7745F12A4DD570095E339 /* 4ffa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4ffa.png; sourceTree = "<group>"; };
+		B6B7746012A4DD570095E339 /* 1vs1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1vs1.png; sourceTree = "<group>"; };
+		B6B7746112A4DD570095E339 /* 1vs1Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1vs1Big.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,26 +277,25 @@
 				B6B7731512A4C3F60095E339 /* Logo57.png */,
 				B6B7731612A4C3F60095E339 /* Logo72.png */,
 				B6B7731712A4C3F60095E339 /* Logo114.png */,
-				B6B7729A12A0FA8C0095E339 /* winnerBig.png */,
-				B6B7729D12A0FAE70095E339 /* winner.png */,
-				B6B7729512A0F9CF0095E339 /* 4ffaBig.png */,
-				B6B7729612A0F9CF0095E339 /* 1vs1Big.png */,
-				B6B7728F12A0F8B00095E339 /* 4ffa.png */,
-				B6B7729012A0F8B00095E339 /* 1vs1.png */,
-				B6B7727812A0F72F0095E339 /* BackButtonBig.png */,
-				B6B7727912A0F72F0095E339 /* StartGameBig.png */,
-				B6B7722D12A0EB9A0095E339 /* LocalButtonBig.png */,
-				B6B7722F12A0EBE50095E339 /* NetworkButtonBig.png */,
-				B6B76FB8129D886E0095E339 /* StartGame.png */,
-				B6B76FBA129D88DB0095E339 /* BackButton.png */,
+				B6B773B912A4CDEF0095E339 /* winnerBig.png */,
+				B6B773BA12A4CDEF0095E339 /* winner.png */,
+				B6B7745E12A4DD570095E339 /* 4ffaBig.png */,
+				B6B7745F12A4DD570095E339 /* 4ffa.png */,
+				B6B7746012A4DD570095E339 /* 1vs1.png */,
+				B6B7746112A4DD570095E339 /* 1vs1Big.png */,
+				B6B773BF12A4CE100095E339 /* LocalButtonBig.png */,
+				B6B773C012A4CE100095E339 /* LocalButton.png */,
 				B6B7731E12A4C4C80095E339 /* LogoNoBack.png */,
 				B6B7731F12A4C4C80095E339 /* LogoNoBackSmall.png */,
-				B6B76F91129CFE220095E339 /* LocalButton.png */,
-				B6B76FAA129CFEE00095E339 /* NetworkButton.png */,
 				B6B7730812A4C3160095E339 /* GameHeader.png */,
 				B6B7730912A4C3160095E339 /* GameHeaderActive.png */,
 				B6B7735612A4C71A0095E339 /* background.png */,
-				B681404E1299F54900861A45 /* red_cross.png */,
+				B6B7742F12A4D5FC0095E339 /* BackButton.png */,
+				B6B7743012A4D5FC0095E339 /* BackButtonBig.png */,
+				B6B7743112A4D5FC0095E339 /* NetworkButton.png */,
+				B6B7743212A4D5FC0095E339 /* NetworkButtonBig.png */,
+				B6B7743312A4D5FC0095E339 /* StartGame.png */,
+				B6B7743412A4D5FC0095E339 /* StartGameBig.png */,
 				B6B7731C12A4C4520095E339 /* iTunesArtwork */,
 			);
 			name = Images;
@@ -506,28 +503,13 @@
 				B6813EF01299BC7600861A45 /* LocalGameViewController.xib in Resources */,
 				B6813EF51299BC8000861A45 /* NetworkGameViewController.xib in Resources */,
 				B6813F451299C37300861A45 /* GameViewController.xib in Resources */,
-				B681404F1299F54900861A45 /* red_cross.png in Resources */,
 				B68141641299FF8700861A45 /* ResultViewController.xib in Resources */,
-				B6B76F92129CFE220095E339 /* LocalButton.png in Resources */,
-				B6B76FAB129CFEE00095E339 /* NetworkButton.png in Resources */,
-				B6B76FB9129D886E0095E339 /* StartGame.png in Resources */,
-				B6B76FBB129D88DB0095E339 /* BackButton.png in Resources */,
 				B6B771B112A0E2730095E339 /* MainWindow-iPad.xib in Resources */,
 				B6B771BA12A0E2BB0095E339 /* RootViewController-iPad.xib in Resources */,
 				B6B771D512A0E35A0095E339 /* ResultViewController-iPad.xib in Resources */,
 				B6B771D712A0E3900095E339 /* GameViewController-iPad.xib in Resources */,
 				B6B771D912A0E3B90095E339 /* NetworkGameViewController-iPad.xib in Resources */,
 				B6B771DF12A0E3DA0095E339 /* LocalGameViewController-iPad.xib in Resources */,
-				B6B7722E12A0EB9A0095E339 /* LocalButtonBig.png in Resources */,
-				B6B7723012A0EBE50095E339 /* NetworkButtonBig.png in Resources */,
-				B6B7727A12A0F72F0095E339 /* BackButtonBig.png in Resources */,
-				B6B7727B12A0F72F0095E339 /* StartGameBig.png in Resources */,
-				B6B7729112A0F8B00095E339 /* 4ffa.png in Resources */,
-				B6B7729212A0F8B00095E339 /* 1vs1.png in Resources */,
-				B6B7729712A0F9CF0095E339 /* 4ffaBig.png in Resources */,
-				B6B7729812A0F9CF0095E339 /* 1vs1Big.png in Resources */,
-				B6B7729B12A0FA8C0095E339 /* winnerBig.png in Resources */,
-				B6B7729E12A0FAE70095E339 /* winner.png in Resources */,
 				B6B7730A12A4C3160095E339 /* GameHeader.png in Resources */,
 				B6B7730B12A4C3160095E339 /* GameHeaderActive.png in Resources */,
 				B6B7731812A4C3F60095E339 /* Logo48.png in Resources */,
@@ -560,6 +542,20 @@
 				B6B7738512A4CA070095E339 /* icono20.png in Resources */,
 				B6B7738612A4CA070095E339 /* icono21.png in Resources */,
 				B6B7738712A4CA070095E339 /* icono23.png in Resources */,
+				B6B773BB12A4CDEF0095E339 /* winnerBig.png in Resources */,
+				B6B773BC12A4CDEF0095E339 /* winner.png in Resources */,
+				B6B773C112A4CE100095E339 /* LocalButtonBig.png in Resources */,
+				B6B773C212A4CE100095E339 /* LocalButton.png in Resources */,
+				B6B7743512A4D5FC0095E339 /* BackButton.png in Resources */,
+				B6B7743612A4D5FC0095E339 /* BackButtonBig.png in Resources */,
+				B6B7743712A4D5FC0095E339 /* NetworkButton.png in Resources */,
+				B6B7743812A4D5FC0095E339 /* NetworkButtonBig.png in Resources */,
+				B6B7743912A4D5FC0095E339 /* StartGame.png in Resources */,
+				B6B7743A12A4D5FC0095E339 /* StartGameBig.png in Resources */,
+				B6B7746212A4DD570095E339 /* 4ffaBig.png in Resources */,
+				B6B7746312A4DD570095E339 /* 4ffa.png in Resources */,
+				B6B7746412A4DD570095E339 /* 1vs1.png in Resources */,
+				B6B7746512A4DD570095E339 /* 1vs1Big.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +627,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2B4E42DF-FDE3-4AA8-9B9F-0F38CBB30AE4";
 				SDKROOT = iphoneos4.2;
@@ -647,6 +644,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2B4E42DF-FDE3-4AA8-9B9F-0F38CBB30AE4";

@@ -62,7 +62,7 @@
 							<object class="IBUIButton" id="473907932">
 								<reference key="NSNextResponder" ref="815034208"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{0, 740}, {297, 184}}</string>
+								<string key="NSFrame">{{0, 740}, {440, 140}}</string>
 								<reference key="NSSuperview" ref="815034208"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -224,8 +224,8 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="815034208"/>
 							<reference ref="813238540"/>
+							<reference ref="815034208"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -305,7 +305,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>NetworkGameViewController</string>
 					<string>UIResponder</string>
-					<string>{{233, 0}, {783, 756}}</string>
+					<string>{{155, 0}, {783, 756}}</string>
 					<object class="NSMutableDictionary">
 						<string key="NS.key.0">IBCocoaTouchFramework</string>
 						<integer value="0" key="NS.object.0"/>
@@ -325,7 +325,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AUGgAABBoAAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCSAAAxHMAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform"/>
@@ -629,7 +629,7 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{440, 140}</string>
 				<string>{440, 140}</string>
-				<string>{150, 71}</string>
+				<string>{440, 140}</string>
 				<string>{440, 140}</string>
 				<string>{768, 1024}</string>
 			</object>
