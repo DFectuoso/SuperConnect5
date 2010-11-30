@@ -38,7 +38,7 @@ GKMatch* myMatch;
 			Player* p = [[Player alloc] init];
 			[p setLocal:YES];
 			[p setName:[NSString stringWithFormat:@"Player %i", i + 1]];
-			[p setImage:[UIImage imageNamed:[Player getHardCodedImageForIndex:i]]];
+			[p setImage:[UIImage imageNamed:[Player getImageForIndex:i]]];
 			[[game players] addObject:p];
 			[p release];
 		}
@@ -47,7 +47,7 @@ GKMatch* myMatch;
 			Player* p = [[Player alloc] init];
 			[p setComputer:YES];
 			[p setName:[NSString stringWithFormat:@"Computer %i", i + 1]];
-			[p setImage:[UIImage imageNamed:[Player getHardCodedImageForIndex:i + localPlayers]]];
+			[p setImage:[UIImage imageNamed:[Player getImageForIndex:i + localPlayers]]];
 			[[game players] addObject:p];
 			[p release];
 		}
@@ -107,7 +107,7 @@ GKMatch* myMatch;
 				[p setLocal:NO];
 			}
 			[p setName:name];
-			[p setImage:[UIImage imageNamed:[Player getHardCodedImageForIndex:[[game players] count]]]];
+			[p setImage:[UIImage imageNamed:[Player getImageForIndex:[[game players] count]]]];
 			[[game players] addObject:p];
 			[p release];
 		}
@@ -156,7 +156,7 @@ GKMatch* myMatch;
 	Player* p = [[Player alloc] init];
 	[p setLocal:YES];
 	[p setName:[[GKLocalPlayer localPlayer] alias]];
-	[p setImage:[UIImage imageNamed:[Player getHardCodedImageForIndex:0]]];
+	[p setImage:[UIImage imageNamed:[Player getImageForIndex:0]]];
 	[[game players] addObject:p];
 	[p release];
 
@@ -172,7 +172,7 @@ GKMatch* myMatch;
 				Player* p = [[Player alloc] init];
 				[p setLocal:NO];
 				[p setName:[player alias]];
-				[p setImage:[UIImage imageNamed:[Player getHardCodedImageForIndex:[[game players] count]]]];
+				[p setImage:[UIImage imageNamed:[Player getImageForIndex:[[game players] count]]]];
 				[[game players] addObject:p];
 				[p release];
 			}
@@ -266,8 +266,8 @@ GKMatch* myMatch;
 	[headerLabel setText:[[game turn] name]];
 }
 
-- (void) game:(Game*)game newMove:(Move*)move{
-	[turnImageView setImage:[[game turn] image]];
+- (void) game:(Game*)g newMove:(Move*)move{
+	[turnImageView setImage:[[g turn] image]];
 	[gameBoard addMove:move];
 	if (networkPlayers > 0 && [[move owner] local] == YES) {
 		[self sendMoveToNetwork:move];

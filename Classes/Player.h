@@ -22,7 +22,7 @@
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) UIImage *image;
 
-+(NSString*)getHardCodedImageForIndex:(int)i;
++(NSString*)getImageForIndex:(int)i;
 -(CGPoint)moveWithState:(NSArray*)moves andGame:(Game*)game;
 
 @end
