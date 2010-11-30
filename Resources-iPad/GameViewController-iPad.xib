@@ -212,10 +212,10 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="996770339"/>
 							<reference ref="823855984"/>
-							<reference ref="648781055"/>
 							<reference ref="496069938"/>
 							<reference ref="395413454"/>
 							<reference ref="354839824"/>
+							<reference ref="648781055"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -251,16 +251,13 @@
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">4</int>
-						<reference key="object" ref="648781055"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-						</object>
+						<int key="objectID">13</int>
+						<reference key="object" ref="395413454"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">13</int>
-						<reference key="object" ref="395413454"/>
+						<int key="objectID">4</int>
+						<reference key="object" ref="648781055"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -306,9 +303,7 @@
 						<bytes key="NSTransformStruct">AUKQAABAAAAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAxHqAAA</bytes>
-					</object>
+					<object class="NSAffineTransform"/>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform"/>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
