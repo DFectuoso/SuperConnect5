@@ -9,7 +9,13 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
-	<array/>
+	<array>
+		<string>iTunesArtwork</string>
+		<string>Logo48.png</string>
+		<string>Logo57.png</string>
+		<string>Logo72.png</string>
+		<string>Logo114.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>dfectuoso.connect5</string>
 	<key>CFBundleInfoDictionaryVersion</key>
