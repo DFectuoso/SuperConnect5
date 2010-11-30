@@ -54,7 +54,7 @@
 					<object class="IBUIImageView" id="996770339">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{768, 53}</string>
+						<string key="NSFrame">{{-7, 0}, {781, 53}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -66,7 +66,7 @@
 					<object class="IBUIImageView" id="354839824">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 1}, {768, 53}}</string>
+						<string key="NSFrame">{{0, 1}, {779, 53}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -211,11 +211,11 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="996770339"/>
-							<reference ref="354839824"/>
 							<reference ref="823855984"/>
 							<reference ref="648781055"/>
 							<reference ref="496069938"/>
 							<reference ref="395413454"/>
+							<reference ref="354839824"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -291,7 +291,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>GameViewController</string>
 					<string>UIResponder</string>
-					<string>{{377, 0}, {783, 756}}</string>
+					<string>{{116, 0}, {783, 756}}</string>
 					<object class="NSMutableDictionary">
 						<string key="NS.key.0">IBCocoaTouchFramework</string>
 						<integer value="0" key="NS.object.0"/>
@@ -306,7 +306,9 @@
 						<bytes key="NSTransformStruct">AUKQAABAAAAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<object class="NSAffineTransform"/>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAxHqAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform"/>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -622,8 +624,8 @@
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{320, 50}</string>
-				<string>{320, 50}</string>
+				<string>{322, 54}</string>
+				<string>{322, 54}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>

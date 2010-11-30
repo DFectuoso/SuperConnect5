@@ -54,7 +54,7 @@
 					<object class="IBUIImageView" id="996770339">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{320, 53}</string>
+						<string key="NSFrame">{{-6, 0}, {334, 53}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -210,10 +210,10 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="648781055"/>
 							<reference ref="996770339"/>
-							<reference ref="354839824"/>
 							<reference ref="823855984"/>
 							<reference ref="496069938"/>
 							<reference ref="152673690"/>
+							<reference ref="354839824"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -617,8 +617,8 @@
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{320, 50}</string>
-				<string>{320, 50}</string>
+				<string>{322, 54}</string>
+				<string>{322, 54}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>
