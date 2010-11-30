@@ -22,7 +22,6 @@ I would like to refactor:
 -> Move the networking code to a networking class
 
 Things to do:
--> Add sign in the play screen
 -> Test with more than 2 people
 -> Make the Symbol and image be the same on all clients
   -> Piece has an id, form string, color string; Is it core data?g
@@ -32,6 +31,4 @@ Things to do:
 
 Later:
 -> Leaderboard
-
-
 

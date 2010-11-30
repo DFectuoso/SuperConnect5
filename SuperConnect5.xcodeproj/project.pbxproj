@@ -71,6 +71,7 @@
 		B6B7729812A0F9CF0095E339 /* 1vs1Big.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7729612A0F9CF0095E339 /* 1vs1Big.png */; };
 		B6B7729B12A0FA8C0095E339 /* winnerBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7729A12A0FA8C0095E339 /* winnerBig.png */; };
 		B6B7729E12A0FAE70095E339 /* winner.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B7729D12A0FAE70095E339 /* winner.png */; };
+		B6B772E812A2D5170095E339 /* ComputerMove.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B772E712A2D5170095E339 /* ComputerMove.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +155,8 @@
 		B6B7729612A0F9CF0095E339 /* 1vs1Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1vs1Big.png; sourceTree = "<group>"; };
 		B6B7729A12A0FA8C0095E339 /* winnerBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winnerBig.png; sourceTree = "<group>"; };
 		B6B7729D12A0FAE70095E339 /* winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winner.png; sourceTree = "<group>"; };
+		B6B772E612A2D5170095E339 /* ComputerMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerMove.h; sourceTree = "<group>"; };
+		B6B772E712A2D5170095E339 /* ComputerMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerMove.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +342,8 @@
 				B6813F661299C6F000861A45 /* Game.m */,
 				B6B76FB1129D87560095E339 /* Piece.h */,
 				B6B76FB2129D87560095E339 /* Piece.m */,
+				B6B772E612A2D5170095E339 /* ComputerMove.h */,
+				B6B772E712A2D5170095E339 /* ComputerMove.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -522,6 +527,7 @@
 				B68141631299FF8700861A45 /* ResultViewController.m in Sources */,
 				B625087E129B84270025FB92 /* NSMutableArray_Shuffling.m in Sources */,
 				B6B76FB3129D87560095E339 /* Piece.m in Sources */,
+				B6B772E812A2D5170095E339 /* ComputerMove.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
