@@ -10,10 +10,13 @@
 #import <GameKit/GameKit.h>
 
 @interface RootViewController : UIViewController {
-
+	UIView *overlay;
+	UIActivityIndicatorView *activityIndicator;
 }
 
 -(IBAction) goToLocalGame:(id)sender;
 -(IBAction) goToNetworkGame:(id)sender;
+-(void)showActivityIndicator;
+-(void)hideActivityIndicator;
 
 @end

@@ -138,15 +138,21 @@ GKMatch* myMatch;
 		
 		BOOL theOne = YES;
 		NSUInteger local = [[[GKLocalPlayer localPlayer] playerID] hash];
-		for (NSString* playerId in [match playerIDs]) {
-			if (local > [playerID hash]) {
+//		[debugTextView setText:[NSString stringWithFormat:@"| Local: %i(%@)", local, [[GKLocalPlayer localPlayer] playerID]]];
+		for (NSString* pId in [match playerIDs]) {
+//			[debugTextView setText:[NSString stringWithFormat:@"%@ | Comparando: local %i con %i(%@)", [debugTextView text], local, [pId hash], pId]];
+			if (local > [pId hash]) {
 				theOne = NO;
 			}
 		}
 		
 		if (theOne) {
+//			[debugTextView setText:[NSString stringWithFormat:@"%@ | Fui el the one", [debugTextView text]]];
 			[self networkInit];
+		} else {
+//			[debugTextView setText:[NSString stringWithFormat:@"%@ | No fui el de one", [debugTextView text]]];
 		}
+
     }
 }
 #pragma mark -
@@ -179,8 +185,6 @@ GKMatch* myMatch;
 			[self networkInitAddedAnotherPlayerToTheArray];	
 		}
 	}];
-	
-	
 	// Create players array
 }
 

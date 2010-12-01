@@ -62,6 +62,7 @@
 	
 	// Did we win with that?
 	if ([self checkForWin]) {
+		[delegate game:self newMove:move];
 		[delegate game:self playerJustWon:turn];
 	} else {
 		// Lets get the next active player
@@ -143,7 +144,6 @@
 			
 		}
 	}
-	
 	
 	return win;
 }

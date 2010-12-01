@@ -20,6 +20,8 @@
 	IBOutlet UIScrollView *scrollView;
 	IBOutlet UIImageView *turnImageView;
 	
+//	IBOutlet UITextView *debugTextView;
+	
 	UIView *overlay;
 	GameBoard *gameBoard;
 	Game *game;

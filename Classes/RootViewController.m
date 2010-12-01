@@ -4,8 +4,34 @@
 
 @implementation RootViewController
 
--(IBAction) goToLocalGame:(id)sender{
+-(void) viewDidLoad{
+	overlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+	[overlay setAlpha:0.3];
+	[overlay setBackgroundColor:[UIColor blackColor]];
+	[[self view] addSubview:overlay];
 	
+	activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+	[activityIndicator setCenter:CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2.0)]; // I do this because I'm in landscape mode
+
+	[self.view addSubview:activityIndicator]; // spinner is not visible until started	
+	[[self view] addSubview:activityIndicator];
+	
+	[self hideActivityIndicator];
+}
+
+-(void)hideActivityIndicator{
+	[overlay setHidden:YES];
+	[activityIndicator setHidden:YES];
+	[activityIndicator stopAnimating];
+}
+
+-(void)showActivityIndicator{
+	[overlay setHidden:NO];
+	[activityIndicator setHidden:NO];
+	[activityIndicator startAnimating];
+}
+
+-(IBAction) goToLocalGame:(id)sender{
 	LocalGameViewController *c;
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 		c = [[LocalGameViewController alloc] initWithNibName:@"LocalGameViewController-iPad" bundle:nil];
@@ -17,7 +43,10 @@
 }
 
 -(IBAction) goToNetworkGame:(id)sender{
+	[self showActivityIndicator];
+	
 	[[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:^(NSError *error) {
+		[self hideActivityIndicator];
 		if (error == nil) {
 			NetworkGameViewController *c;
 			if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
@@ -27,9 +56,6 @@
 			}
 			[[self navigationController] pushViewController:c animated:YES];
 			[c release];	
-		} else {
-			NSLog(@"Lolz");
-			// Your application can process the error parameter to report the error to the player.
 		}
 	}];
 }
@@ -44,6 +70,8 @@
 }
 
 - (void)dealloc {
+	[overlay release];
+	[activityIndicator release];
     [super dealloc];
 }
 

@@ -27,7 +27,7 @@
 	}
 	
 	[gameVC setLocalPlayers:1];
-	[gameVC setNetworkPlayers:2];
+	[gameVC setNetworkPlayers:3];
 	
 	[[self navigationController] pushViewController:gameVC animated:YES];
 	[gameVC release];	
