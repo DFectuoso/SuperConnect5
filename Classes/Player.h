@@ -14,12 +14,14 @@
 	BOOL local;
 	BOOL computer;
 	NSString *name;
+	NSString *imageName;
 	UIImage *image;
 }
 
 @property BOOL local;
 @property BOOL computer;
 @property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *imageName;
 @property (nonatomic, retain) UIImage *image;
 
 +(NSString*)getImageForIndex:(int)i;

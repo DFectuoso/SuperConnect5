@@ -55,7 +55,6 @@ GKMatch* myMatch;
 		[game startLocally];
 		[turnImageView setImage:[[game turn] image]];
 	} else {
-		
 		GKMatchRequest *request = [[[GKMatchRequest alloc] init] autorelease];
 		request.minPlayers = localPlayers + networkPlayers;
 		request.maxPlayers = localPlayers + networkPlayers;
@@ -71,6 +70,13 @@ GKMatch* myMatch;
 		[[self view] addSubview:overlay];
 	}
 	
+}
+
+- (IBAction) exitGame:(id)sender{
+	if (networkPlayers > 0) {
+		[myMatch disconnect];
+	}
+	[[self navigationController] popToRootViewControllerAnimated:YES];
 }
 
 /* You need to set this guy as the delegate of the scroll view and then do this
@@ -107,13 +113,15 @@ GKMatch* myMatch;
 		for (NSDictionary *playerD in [p valueForKey:@"players"]) {
 			Player* p = [[Player alloc] init];
 			NSString *name = [playerD valueForKey:@"name"];
+			NSString *imageName = [playerD valueForKey:@"imageName"];
 			if ([name isEqualToString:[[GKLocalPlayer localPlayer] alias]]) {
 				[p setLocal:YES];
 			} else {
 				[p setLocal:NO];
 			}
 			[p setName:name];
-			[p setImage:[UIImage imageNamed:[Player getImageForIndex:[[game players] count]]]];
+			[p setImage:[UIImage imageNamed:imageName]];
+			[p setImageName:imageName];
 			[[game players] addObject:p];
 			[p release];
 		}
@@ -134,31 +142,26 @@ GKMatch* myMatch;
 			break;
         case GKPlayerStateDisconnected:
             // a player just disconnected.
+			NSLog(@"Soneone disconnected");
+			[[self navigationController] popToRootViewControllerAnimated:YES];
 			break;
     }
 	
     if (!matchStarted && match.expectedPlayerCount == 0){
         matchStarted = YES;
-		// Take a random number and send it to everyone.
-		// IF WE ARE THE ONE, RUN THE NETWORK SETUP!!!
+		// Take a random number and send it to everyone. should we do the game set up?
 		
 		BOOL theOne = YES;
 		NSUInteger local = [[[GKLocalPlayer localPlayer] playerID] hash];
-//		[debugTextView setText:[NSString stringWithFormat:@"| Local: %i(%@)", local, [[GKLocalPlayer localPlayer] playerID]]];
 		for (NSString* pId in [match playerIDs]) {
-//			[debugTextView setText:[NSString stringWithFormat:@"%@ | Comparando: local %i con %i(%@)", [debugTextView text], local, [pId hash], pId]];
 			if (local > [pId hash]) {
 				theOne = NO;
 			}
 		}
 		
 		if (theOne) {
-//			[debugTextView setText:[NSString stringWithFormat:@"%@ | Fui el the one", [debugTextView text]]];
 			[self networkInit];
-		} else {
-//			[debugTextView setText:[NSString stringWithFormat:@"%@ | No fui el de one", [debugTextView text]]];
 		}
-
     }
 }
 #pragma mark -
@@ -169,11 +172,11 @@ GKMatch* myMatch;
 	[p setLocal:YES];
 	[p setName:[[GKLocalPlayer localPlayer] alias]];
 	[p setImage:[UIImage imageNamed:[Player getImageForIndex:0]]];
+	[p setImageName:[Player getImageForIndex:0]];
 	[[game players] addObject:p];
 	[p release];
 
 	// Create other players
-	// TODO TODO TODO MAKE THIS LOAD ALL INSTEAD OF EACH COZ GK PLAYER CAN GET PLAYERSIDS NOT PLAYERID ONLY
 	[GKPlayer loadPlayersForIdentifiers:[myMatch playerIDs] withCompletionHandler:^(NSArray *players, NSError *error) {
 		if (error != nil){
 			// Handle the error.
@@ -185,19 +188,19 @@ GKMatch* myMatch;
 				[p setLocal:NO];
 				[p setName:[player alias]];
 				[p setImage:[UIImage imageNamed:[Player getImageForIndex:[[game players] count]]]];
+				[p setImageName:[Player getImageForIndex:[[game players] count]]];
 				[[game players] addObject:p];
 				[p release];
 			}
-			[self networkInitAddedAnotherPlayerToTheArray];	
+			[self networkInitAddedOtherPlayersToTheArray];	
 		}
 	}];
 	// Create players array
 }
 
-- (void) networkInitAddedAnotherPlayerToTheArray{
-	if ([[game players] count] != localPlayers + networkPlayers) return;
+- (void) networkInitAddedOtherPlayersToTheArray{
+	if ([[game players] count] != localPlayers + networkPlayers) return; // We should probably quit here or something
 	[[game players] shuffle];
-	[turnImageView setImage:[[game turn] image]];
 	
 	// Send players array to everyone
 	[self sendPlayerArray];
@@ -206,6 +209,7 @@ GKMatch* myMatch;
 
 - (void) startNetworkGame{
 	[game startNetworkedGame];
+	[turnImageView setImage:[[game turn] image]];
 	[overlay removeFromSuperview];		 
 }
 
@@ -232,6 +236,7 @@ GKMatch* myMatch;
 	for (Player* p in [game players]) {
 		NSMutableDictionary* playerD = [[NSMutableDictionary alloc] init];
 		[playerD setValue:[p name] forKey:@"name"];
+		[playerD setValue:[p imageName] forKey:@"imageName"];
 		[players addObject:playerD];
 	}
 

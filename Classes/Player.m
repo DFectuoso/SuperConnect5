@@ -17,13 +17,14 @@ static BOOL randomized = NO;
 
 @implementation Player
 
-@synthesize local, name, image, computer;
+@synthesize local, name, image, computer, imageName;
 
 -(CGPoint)moveWithState:(NSArray*)moves andGame:(Game*)game{
 	return [ComputerMove moveWithState:moves game:game andInverseMistake:100];
 }
 
 +(void)randomizeImagesOrder{
+	NSLog(@"Randomizing Images");
 	if (iconsForPlayers){
 		[iconsForPlayers release];
 	}
@@ -40,6 +41,7 @@ static BOOL randomized = NO;
 		[Player randomizeImagesOrder];
 		randomized = YES;
 	}
+	NSLog(@"Someone asked for %i and I searched on %@", i, iconsForPlayers);
 	return [NSString stringWithFormat:@"icono%i.png",[[iconsForPlayers objectAtIndex:i] intValue]];
 }
 

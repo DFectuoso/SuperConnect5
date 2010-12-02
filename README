@@ -16,18 +16,11 @@ It started with a prototype(now forgotten) and a cool weekend in mexico city.
 
 Right now it has local play and simple multiplayer game.
 
-
 Things to do:
--> Put new images instead of my images
--> Refactor the logic to have a rule engine, and write things like try to "*XXXO" and that would search in all directions(in random order)
--> Test with more than 2 people
--> Make the Symbol and image be the same on all clients
-  -> Piece has an id, form string, color string; Is it core data?g
-
+-> Add some cases to prevent win to the computer
 -> Achievements
--> Make the cmputer random move make it closer to the game
-
 
 Later:
 -> Leaderboard
+-> Refactor the logic to have a rule engine, and write things like try to "*XXXO" and that would search in all directions(in random order)
 

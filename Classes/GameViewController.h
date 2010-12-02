@@ -31,19 +31,24 @@
 	int localPlayers;
 	int computerPlayers;
 	int networkPlayers;	
+	
+//	NSMutableDictionary *achievementsDictionary;
 }
 
 @property int localPlayers;
 @property int computerPlayers;
 @property int networkPlayers;
+//@property(nonatomic, retain) NSMutableDictionary *achievementsDictionary;
 
 // Two ways to start:
 // Set players from Data
 // Set players with X Local X computers1
 
+- (IBAction) exitGame:(id)sender;
+
 - (void) centerToMove:(Move*)move;
 - (void) networkInit;
-- (void) networkInitAddedAnotherPlayerToTheArray;
+- (void) networkInitAddedOtherPlayersToTheArray;
 - (void) sendPlayerArray;
 - (void) startNetworkGame;
 - (void) sendMoveToNetwork:(Move*)m;
