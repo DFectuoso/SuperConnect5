@@ -55,6 +55,7 @@ GKMatch* myMatch;
 		[game startLocally];
 		[turnImageView setImage:[[game turn] image]];
 	} else {
+		
 		GKMatchRequest *request = [[[GKMatchRequest alloc] init] autorelease];
 		request.minPlayers = localPlayers + networkPlayers;
 		request.maxPlayers = localPlayers + networkPlayers;
@@ -64,14 +65,19 @@ GKMatch* myMatch;
 		
 		[self presentModalViewController:mmvc animated:YES];
 		overlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-		[overlay setBackgroundColor:[UIColor redColor]];
+		[overlay setBackgroundColor:[UIColor blackColor]];
+		[overlay setAlpha:0.3];
 		[[self view] bringSubviewToFront:overlay];
 		[[self view] addSubview:overlay];
-		
-		// ********TODO TODO HERE YOU HAVE TO see if you are the lowest, if so, activate database(errr, master server script)
 	}
 	
 }
+
+/* You need to set this guy as the delegate of the scroll view and then do this
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+	return gameBoard;
+}
+ */
 
 #pragma mark matchmakerViewController 
 - (void)matchmakerViewControllerWasCancelled:(GKMatchmakerViewController *)viewController{

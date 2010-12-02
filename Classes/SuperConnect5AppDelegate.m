@@ -9,7 +9,6 @@
 #import "SuperConnect5AppDelegate.h"
 #import "RootViewController.h"
 
-
 @implementation SuperConnect5AppDelegate
 
 @synthesize window;
@@ -26,7 +25,7 @@
     // Add the navigation controller's view to the window and display.
     [window addSubview:navigationController.view];
     [window makeKeyAndVisible];
-
+	
     return YES;
 }
 
